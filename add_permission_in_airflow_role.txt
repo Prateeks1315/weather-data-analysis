@@ -1,7 +1,7 @@
 {
             "Effect": "Allow",
             "Action": "iam:PassRole",
-            "Resource": "arn:aws:iam::851725469799:role/glue-role",
+            "Resource": "arn:aws:iam::136079915143:role/AWSGlueServiceRole-RedshiftAccess",
             "Condition": {
                 "StringEquals": {
                     "iam:PassedToService": "glue.amazonaws.com"
@@ -16,10 +16,10 @@
         {
             "Effect": "Allow",
             "Resource": [
-                "arn:aws:s3:::airflow-managed-gds",
-                "arn:aws:s3:::airflow-managed-gds/*",
-                "arn:aws:s3:::aws-glue-assets-851725469799-us-east-1",
-                "arn:aws:s3:::aws-glue-assets-851725469799-us-east-1/*"
+                "arn:aws:s3:::airflow-managed-p",
+                "arn:aws:s3:::airflow-managed-p/*",
+                "arn:aws:s3:::aws-glue-assets-136079915143-us-east-1",
+                "arn:aws:s3:::aws-glue-assets-136079915143-us-east-1/*"
             ],
             "Action": [
                 "s3:PutObject",
